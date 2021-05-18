@@ -12,7 +12,7 @@ body,html{
     box-sizing: border-box;
 }
 
-.pimg1{
+.pimg1, .pimg2{
     position:relative;
     overflow-x: hidden;
     background-position:center;
@@ -27,8 +27,9 @@ body,html{
 .pimg1{
     background-image: url('images/Clouds-background-1-1024x644.png');
     min-height: 100%;
-    margin-bottom: 50px;
+    
 }
+
 .mountainBottom{
     
     background-image: url('images/Forground2-1024x517.png');
@@ -126,3 +127,36 @@ body,html{
     background-repeat: no-repeat;
     z-index:3;
 }
+
+        .pimg2{
+            background-image: url('images/Page\ 2\ parallax.png');
+            min-height: 100%;
+        }
+        .aboutMe{
+            position: absolute;
+    top:30%;
+    width:100%;
+    text-align: left;
+    color: #000;
+    display:flex;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+          padding:50px 50px;  
+    
+        }
+        .aboutMe p{
+            font-size: 10px;
+        }
+
+        .aboutMe .border{
+            
+            background-color: cornflowerblue;
+            color:#fff;
+            padding:20px;
+            line-height: 20px;
+            
+        }
+        .coins{
+            height:250px;
+            width:250px;
+        }
