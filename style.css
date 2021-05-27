@@ -12,13 +12,13 @@ body,html{
     box-sizing: border-box;
 }
 
-.pimg1, .pimg2{
+.pimg1, .pimg2, .pimg3{
     position:relative;
     overflow-x: hidden;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 
 
@@ -27,7 +27,7 @@ body,html{
 .pimg1{
     background-image: url('images/Clouds-background-1-1024x644.png');
     min-height: 100%;
-    
+    background-attachment: fixed;
 }
 
 .mountainBottom{
@@ -154,9 +154,28 @@ body,html{
             color:#fff;
             padding:20px;
             line-height: 20px;
-            
+            z-index:5;
         }
         .coins{
             height:250px;
             width:250px;
         }
+
+                .pimg3{
+                    position: relative;
+                    margin-top:-1090px;
+                    background-image: url('images/Page\ 3\ Parallax.png');
+            height: 2000px;
+                }
+
+                .middle3{
+                   position: absolute;
+                   top:75%;
+    width:100%;
+    font-size: 50px;
+    color:white;
+    height:100px;
+                   margin: 0 auto;
+                   text-align: center;
+                   z-index: 4;
+                }
