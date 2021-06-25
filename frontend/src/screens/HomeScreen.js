@@ -1,4 +1,6 @@
 import React from 'react'
+import PartTwo from '../components/partTwo'
+import PartThree from '../components/partThree'
 
 function HomeScreen() {
     const imagePath = 'cloudsmain.png'
@@ -23,7 +25,8 @@ function HomeScreen() {
          </div>
          </div>
     
-
+        <PartTwo />
+        <PartThree />
         </>
 
 
