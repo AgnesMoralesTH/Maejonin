@@ -1,4 +1,5 @@
 import React from 'react'
+import GalleryThree from './GalleryThree'
 
 function PartThree() {
     const page3 = 'images/Page3.png'
@@ -8,6 +9,7 @@ function PartThree() {
             
             <div className="middle3">
                 <span>Gallery:</span>
+                <GalleryThree />
             </div>
         </div>
         

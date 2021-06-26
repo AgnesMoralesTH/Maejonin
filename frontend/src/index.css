@@ -105,6 +105,25 @@ text-transform: uppercase;
  padding:50px 50px;  
 
 }
+.grid-container{
+
+   background-color: #666;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+   margin: 0 auto;
+   grid-gap: 10px;
+   padding: 20px 20px 20px 20px;
+   
+   }
+   .grid-item{
+   background-color: white;
+   height:170px;
+   width:170px;
+   padding:10px 10px 10px 10px
+   }
+
 .aboutMe p{
    font-size: 10px;
 }
