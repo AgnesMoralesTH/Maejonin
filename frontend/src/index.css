@@ -7,7 +7,7 @@ body,html{
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
-  
+  background-color: black;
 }
 *{
    box-sizing: border-box;
@@ -19,12 +19,12 @@ body,html{
    background-position:center;
    background-size: cover;
    background-repeat: no-repeat;
-  
+   
 }
 .part1{
    height: 1000px;
    width: 100%;
-   
+   background-attachment:fixed;
 }
 .midMount1{
    position: absolute;
@@ -40,7 +40,10 @@ body,html{
    background-position:center;
    background-size: cover;
    background-repeat: no-repeat;
+   z-index:2;
+  
 }
+
 .forGround1{
    min-height: 60%;
     width: 100%;
@@ -51,7 +54,7 @@ body,html{
     right:0;
     margin-left: -400px;
     margin-top: 100px;
-    background-position-x: 25%;
+   
     background-size: cover;
     z-index: 3;
 }
@@ -79,7 +82,15 @@ body,html{
 .middleText{
    text-align: center;
    margin-top: 100px;
-   
+   animation: MoveUpDown 2s linear ;
+}
+@keyframes MoveUpDown {
+   0%, 100%{
+      margin-top:-790px;
+   }
+   50%{
+      margin-top:-755px;
+   }
 }
 .logo{
    height: 250px;
@@ -106,9 +117,8 @@ text-transform: uppercase;
 
 }
 .grid-container{
-
-   background-color: #666;
-
+   
+   width: 1000px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    
@@ -117,8 +127,13 @@ text-transform: uppercase;
    padding: 20px 20px 20px 20px;
    
    }
+   .galleryImage{
+      height: 150px;
+      width:150px;
+      
+    }
    .grid-item{
-   background-color: white;
+   background-color: rgb(172, 172, 172);
    height:170px;
    width:170px;
    padding:10px 10px 10px 10px
@@ -161,3 +176,43 @@ height:100px;
   text-align: center;
   z-index: 4;
 }
+
+@media only screen and (min-width: 1350px) {
+   .midMount1{
+      margin-left: 200px;
+      
+      height: 500px;
+      width:500px;
+      background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   }
+   .forGround1{
+      height:500px;
+      width:1400px;
+      margin-top:200px;
+      margin-left: 290px;
+      position: relative;
+   }
+  .rightMount1{
+     height: 500px;
+     width:800px;
+     margin-right: 200px;
+     margin-bottom: 200px;
+  }
+  .rightbird1{
+     margin-right: 450px;
+     margin-top: -50px;
+  }
+  .middleText{
+   text-align: center;
+   margin-top: -700px;
+   position: relative;  
+}
+.aboutMe{
+width:1000px;
+text-align: center;
+margin: 0 auto; 
+position: relative;
+}
+ }

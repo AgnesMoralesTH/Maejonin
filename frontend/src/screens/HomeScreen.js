@@ -13,6 +13,7 @@ function HomeScreen() {
         <>
         <div className="backClouds1" style={{ backgroundImage: `url('${clouds}')` }}>
             
+            
          <div className="part1" style={{ backgroundImage: `url('${imagePath}')` }}>
              <div className="midMount1" style={{ backgroundImage: `url('${midMount}')` }}></div>
              <div className="rightMount1" style={{ backgroundImage: `url('${rightMount}')` }}></div>
@@ -23,6 +24,9 @@ function HomeScreen() {
                  <img src="./images/logopoo.png" className="logo" alt="broken"/>
              </div>
          </div>
+         
+
+
          </div>
     
         <PartTwo />
